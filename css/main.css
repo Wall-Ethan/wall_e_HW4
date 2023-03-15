@@ -43,6 +43,7 @@ article {
     margin: 10px 12px;
 
     text-align: left;
+    width: 25%;
 }
 
 article > h2 {
@@ -52,4 +53,35 @@ article > h2 {
 
 ul {
     list-style-type:none;
+}
+
+#todo {
+    border-color: white;
+}
+
+#todo h2 {
+    color: white;
+}
+
+#inprogress { border-color: red;}
+#inprogress h2 { color: red;}
+
+#done { border-color: green;}
+#done h2 { color: green;}
+
+ul li {
+    padding: 6px 8px;
+    text-transform: uppercase;
+}
+
+#todo li:nth-child(odd) {
+    background-color: rgba(255, 255, 255, 0.2);
+}
+
+#inprogress li:nth-child(odd) {
+    background-color: rgba(255, 0, 0, 0.5);
+}
+
+#done li:nth-child(odd) {
+    background-color: rgba(0, 255, 0, 0.5);
 }
