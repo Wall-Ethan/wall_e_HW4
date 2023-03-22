@@ -79,6 +79,10 @@ ul li {
     text-transform: uppercase;
 }
 
+li::after{
+    background-color: aquamarine;
+}
+
 #todo li:nth-child(odd) {
     background-color: rgba(83, 168, 248);
 }
