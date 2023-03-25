@@ -1,8 +1,3 @@
-/* Reset all of the defaults to 0 so
-that you can write your own CSS */
-/* DONT RELY ON BROWSER DEFAULTS*/
-
-
 * {
     border:none;
     margin:0;
@@ -79,10 +74,6 @@ ul li {
     text-transform: uppercase;
 }
 
-li::after{
-    background-color: aquamarine;
-}
-
 #todo li:nth-child(odd) {
     background-color: rgba(83, 168, 248);
 }
@@ -112,4 +103,23 @@ main {
     }
 
     main {margin: 0;}
+}
+
+[type="checkbox"] + label {
+    font-style: italic;
+    color: #ffffff;
+}
+[type="checkbox"]:checked + label {
+    color: rgb(0, 17, 255);
+    font-style: normal;
+}
+[type="checkbox"]:checked:after {
+    content: 'Great';
+    color: black;
+    margin-left: 70px;
+    text-transform: none;
+}
+[type="checkbox"]:checked + label:after {
+    content: url('../img/up.png');
+    margin-left: 40px;
 }
